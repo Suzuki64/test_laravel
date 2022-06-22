@@ -1,0 +1,180 @@
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 25px auto;
+  text-align: center;
+}
+.search_form{
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 20px;
+  border: solid 2px;
+}
+.form_name_gender,
+.form_created_date,
+.form-email{
+  margin-bottom: 20px;
+}
+
+.search_input{
+  font-size: 16px;
+  width: 20%;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 1px gray;
+}
+.label_name,.label_date,.label_email {
+  width: 15%;
+  display: inline-block;
+  font-weight: bold;
+}
+.label_gender{
+  width: 5%;
+  margin-left: 30px;
+  display: inline-block;
+  font-weight: bold;
+}
+.label_radio{
+  width: 6%;
+  display: inline-block;
+  position: relative;
+  padding-left: 50px;
+}
+.radio {
+  display: none;
+}
+.radio+.label_radio::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid gray;
+  top: 0;
+  left: 0px;
+  bottom: 0;
+  margin: auto;
+}
+.radio+.label_radio::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: black;
+  top: 0;
+  left: 14px;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  transition: .3s;
+}
+.radio:checked+.label_radio::after {
+  opacity: 1;
+}
+table {
+  width: 90%;
+  margin: 25px auto 10px;
+}
+
+.button_box {
+  text-align: center;
+}
+button{
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
+.submit_btn {
+  width: 150px;
+  height: 40px;
+  margin-bottom:10px ;
+}
+.search_table tr{
+  height: 40px;
+}
+.search_table tr:first-child{
+  border-bottom: solid 1px;
+}
+.search_table th {
+  text-align: left;
+}
+.search_table td {
+  padding: 5px;
+}
+.td_id,.td_name,.td_gender{
+  width: 10%;
+}
+.td_email{
+  width: 20%;
+}
+.td_opinion{
+  width: 40%;
+  position: relative;
+}
+.td_opinion .td_opinion_mask{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 1;
+  left: 0;
+  opacity: 0;
+  transition: all 0.2s ease;
+  background-color: white;
+  text-align: left;
+  display: table;
+}
+.td_opinion:hover .td_opinion_mask{
+  opacity: 1;
+}
+.remain_char{
+  font-size: 12px;
+  padding: 5px;
+  display: table-cell;
+  vertical-align: top;
+}
+.search_result{
+  border: solid 0px;
+  width:100%
+}
+
+.paginate {
+  width: 90%;
+  margin: 50px auto 50px;
+}
+svg.w-5.h-5 {
+  width: 20px;
+  height: 20px;
+  color: black;
+  vertical-align: middle;
+}
+.pagenate_box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pagenate_link td {
+  border: solid 1px lightgray;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  vertical-align: middle;
+}
+.pagenate_current{
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: black;
+  display: table;
+}
+.pagenate_current span{
+  display: table-cell;
+  vertical-align: middle;
+}
+.pagenate_link a{
+  text-decoration: none;
+}
+
