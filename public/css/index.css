@@ -104,6 +104,7 @@ button{
 }
 .search_table td {
   padding: 5px;
+  height: 40px;
 }
 .td_id,.td_name,.td_gender{
   width: 10%;
@@ -116,8 +117,8 @@ button{
   position: relative;
 }
 .td_opinion .td_opinion_mask{
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   position: absolute;
   top: 1;
   left: 0;
@@ -126,13 +127,14 @@ button{
   background-color: white;
   text-align: left;
   display: table;
+  Z-index: 2; 
 }
 .td_opinion:hover .td_opinion_mask{
   opacity: 1;
 }
 .remain_char{
   font-size: 12px;
-  padding: 5px;
+  padding: 0px 7px 0px;
   display: table-cell;
   vertical-align: top;
 }
