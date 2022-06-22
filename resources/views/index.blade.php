@@ -36,7 +36,7 @@
 </form>
 
 <div class="paginate">
-	{{ $items->appends(request()->query())->links() }}
+	{{ $items->appends(request()->input())->links() }}
 </div>
 
 <table class=search_table>
